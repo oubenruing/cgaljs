@@ -1,5 +1,5 @@
 NAME = 'mpfr'
-VERSION = '3.1.1'
+VERSION = '4.1.0'
 DOWNLOADS = ['http://www.mpfr.org/mpfr-%s/mpfr-%s.tar.bz2' % (VERSION,VERSION)]
 SOURCE_DIR = 'mpfr-%s' % VERSION
 CONFIGURE_CMD = 'EMCONFIGURE_JS=1 emconfigure ./configure --with-gmp-include={includes}/gmp --with-gmp-lib={libs}'

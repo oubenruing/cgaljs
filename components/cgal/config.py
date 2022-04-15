@@ -1,13 +1,9 @@
 NAME = 'cgal'
-VERSION = '4.1'
+VERSION = '5.4'
 # Unfortunately there's no way to generate the URL based on version. Only the ID in the URL below is actually used
-DOWNLOADS = ['https://gforge.inria.fr/frs/download.php/31640/CGAL-4.1.tar.bz2']
+DOWNLOADS = ['https://gforge.inria.fr/frs/download.php/31640/CGAL-5.4.tar.bz2']
 SOURCE_DIR = 'CGAL-%s' % VERSION
 SOURCE_PATCHES = [
-    {'file': 'cmake/modules/CGAL_SetupBoost.cmake', 'patch': 'CGAL_SetupBoost.cmake.patch'},
-    {'file': 'include/CGAL/config.h', 'patch': 'config.h.patch'},
-    {'file': 'include/CGAL/FPU.h', 'patch': 'FPU.h.patch'},
-    {'file': 'include/CGAL/Interval_nt.h', 'patch': 'Interval_nt.h.patch'},
     {'file': 'CMakeLists.txt', 'patch': 'CMakeLists.txt.patch'},
     ]
 CONFIGURE_CMD = ' '.join([
